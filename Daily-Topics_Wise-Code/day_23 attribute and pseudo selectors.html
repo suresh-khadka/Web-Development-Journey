@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute and nth child pseudo selectors</title>
+    <style>
+      input {
+        display: block;
+      }
+      .container {
+        display: block;
+        width: 233px;
+        margin: auto;
+      }
+      input[type="text"] {
+        border: 3px solid red;
+      }
+      a[target="_blank"] {
+        color: aqua;
+      }
+      .container ul li:nth-child(3){
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="https://google.com" target="_blank">Go To Google</a></h1>
+      <form action="" class="formcontrol">
+        <label for="fullname">Full Name:</label>
+        <input type="text"id="fullname"name="fullname"placeholder="Enter your name"/>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" placeholder="Enter your password" />
+        <input type="Submit" placeholder="Submit" />
+      </form>
+      <ul>
+        <li id="item-1">item-1</li>
+        <li id="item-2">item-2</li>
+        <li id="item-3">item-3</li>
+        <li id="item-4">item-4</li>
+        <li id="item-5">item-5</li>
+      </ul>
+    </div>
+  </body>
+</html>
