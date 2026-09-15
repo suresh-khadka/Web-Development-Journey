@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Query</title>
+    <style>
+        .box{
+            font-size: 73px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            display: none;
+        }
+        @media(max-width:300px){
+            #box1{
+                display: block;
+                background-color: red;
+            }
+        }
+        @media(min-width:300px) and (max-width:600px){
+            #box2{
+                display: block;
+                background-color: yellow;
+            }
+        }
+        @media(min-width:600px){
+            #box3{
+                display: block;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">hii, i am a data engineer</div>
+    <div class="box" id="box2">hii am  full stack developer</div>
+    <div class="box" id="box3">hii i am a ml engineer</div>
+    <div class="box" id="box4">hi i am a AI ebgineer</div>
+</body>
+</html>
