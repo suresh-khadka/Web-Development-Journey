@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let item=['suresh','khadka',2,56,89,0];
+        for(i in item){
+            console.log('hello, '+ item[i]);
+        }
+        // oR
+        item.forEach(function f(i){
+            console.log('hiii, ' + i)
+        });
+        
+        // for of loop 
+        for(i of item){
+            console.log('hiii, ' + i)
+        }
+    </script>
+</body>
+</html>
