@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAnipulating DOM</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+        </ul>
+        <div><p>hello World</p></div>
+    </div>
+    
+    <div class="container">
+        this is another container
+    </div>
+   <script>
+    //    document.getElementById('main').innerHTML='<h3> hello </h3>';
+       let main=document.getElementById('main');
+       console.log(main);
+
+       let cont=document.getElementsByClassName('container')
+       console.log(cont)
+
+       let sel=document.querySelector('#nav>li');
+       console.log('Selector returns',sel)
+
+       let sele=document.querySelectorAll('#nav>li');
+       console.log('Selector returns',sele)
+
+       let div = document.querySelector("div")
+       console.dir(div)
+
+   </script>
+   </script>
+</body>
+</html>
